@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f5f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #004aad, #0078ff);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #004aad;
+}
+
+.features ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.features li {
+  background: #e0f7fa;
+  color: #004d40;
+  padding: 15px 20px;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.features li:hover {
+  transform: scale(1.05);
+}
+
+.course-box {
+  background: #ffffff;
+  border-left: 6px solid #007bff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.course-box:hover {
+  transform: translateY(-5px);
+}
+
+.teacher-card {
+  background: #f9f9f9;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  border-left: 5px solid #00b894;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admission form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.admission input, .admission select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.admission button {
+  padding: 14px;
+  background: linear-gradient(to right, #00b894, #27ae60);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.admission button:hover {
+  background: linear-gradient(to right, #27ae60, #00b894);
+  transform: scale(1.02);
+}
+
+#formMessage {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e0ffe0;
+  color: #006600;
+  border-left: 5px solid #00b894;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer {
+  background: linear-gradient(135deg, #004aad, #0078ff);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features li, .course-box {
+    flex: 1 1 100%;
+  }
+}
