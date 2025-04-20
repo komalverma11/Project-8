@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ModernSchool - Admission Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ModernSchool</h1>
+    <p>Empowering Education with Excellence</p>
+  </header>
+
+  <section class="about">
+    <h2>About Our School</h2>
+    <p>ModernSchool is a leading institution focused on holistic student development through quality education, smart classes, and co-curricular activities.</p>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Smart Classrooms</li>
+      <li>Science & Computer Labs</li>
+      <li>Experienced Teachers</li>
+      <li>Library & Reading Halls</li>
+      <li>Sports and Cultural Activities</li>
+      <li>Hostel Facility</li>
+    </ul>
+  </section>
+
+  <section class="courses">
+    <h2>Courses Offered</h2>
+    <div class="course-box">
+      <h3>Nursery to Class 5</h3>
+      <p>Foundational learning with play-way and modern methods</p>
+    </div>
+    <div class="course-box">
+      <h3>Class 6 to 10</h3>
+      <p>CBSE/State board curriculum with strong academic focus</p>
+    </div>
+    <div class="course-box">
+      <h3>Class 11 & 12</h3>
+      <p>Science, Commerce, Arts streams with expert faculty</p>
+    </div>
+  </section>
+
+  <section class="teachers">
+    <h2>Meet Our Teachers</h2>
+    <div class="teacher-card">
+      <h4>Mr. Rahul Sharma</h4>
+      <p>Physics Teacher – M.Sc., B.Ed., 10+ years experience</p>
+    </div>
+    <div class="teacher-card">
+      <h4>Mrs. Anjali Verma</h4>
+      <p>English Teacher – M.A., B.Ed., 8 years experience</p>
+    </div>
+    <div class="teacher-card">
+      <h4>Mr. Sunil Mehta</h4>
+      <p>Math Teacher – M.Sc., B.Ed., 12 years experience</p>
+    </div>
+  </section>
+
+  <section class="admission">
+    <h2>Apply for Admission</h2>
+    <form id="admissionForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Class</option>
+        <option value="Nursery">Nursery</option>
+        <option value="10th">10th</option>
+        <option value="12th-Science">12th - Science</option>
+        <option value="12th-Commerce">12th - Commerce</option>
+      </select>
+      <input type="file" required>
+      <button type="submit">Submit Application</button>
+    </form>
+    <div id="formMessage" class="hidden">Thank you! Your application has been received.</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ModernSchool | Designed with care</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
